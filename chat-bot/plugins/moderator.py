@@ -132,7 +132,7 @@ class Moderator(Plugin):
         )
         await self.mee6.send_message(
             message.channel,
-            "{} is now 🙊here!".format(member.mention)
+            "{} is now 🙊 here!".format(member.mention)
         )
 
     @command(pattern='^!unmute <@!?([0-9]*)>$', db_name="mute", db_check=True,
@@ -156,7 +156,7 @@ class Moderator(Plugin):
         )
         await self.mee6.send_message(
             message.channel,
-            "{} is no longer 🙊  here! He/she "
+            "{} is no longer 🙊  here! They "
             "can speak 🐵 now!".format(member.mention)
         )
 
